@@ -11,3 +11,23 @@
 5.  Shortly after the appearance of WebAssembly another paper proposed a mechanized specification of the language using Isabelle. The paper can be consulted here: https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf. This mechanized specification complements the first formalization attempt from the paper. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification? Does this new specification removes the need for testing?
 
 ## Answers
+1.AA
+
+2. [COLLECTIONS-709](https://issues.apache.org/jira/browse/COLLECTIONS-709)
+
+The bug has been discovered in the **getCount()** method of the **MultiSet.Entry** interface.
+MultiSet.Entry is an interface in the Apache Commons Collections library for Java that represents an element in a MultiSet. And the Multiset is a collection that supports order-independent equality, like Set, but may have duplicate elements.
+
+**The bug**:
+
+When the last element in a MultiSet is removed using the remove() method, the count of the corresponding MultiSet.Entry should be set to zero. However, due to the bug, the getCount() method is not setting the count to zero even when the last element has been removed.
+
+3. The main advantages of having a formal specification for WebAssembly.
+The binary format of the WebAssembly language is highly efficient and can be loaded and executed much faster than equivalent JavaScript code. It's structured control flow ensures that code is well-formed and cannot contain certain types of errors or bugs that are common in other low-level languages. And also the WebAssembly's stack-based architecture and use of an SSA-form intermediate representation enable efficient compilation and execution on a wide range of hardware and operating systems.
+A formal specification helps ensure that all implementations of WebAssembly are compatible and can interoperate with each other. This is especially important for a language like WebAssembly, which is designed 
+to run in a wide range of environments.
+With a formal specification, WebAssembly programs can be compiled once and run on any platform that supports the WebAssembly runtime. 
+This makes it easier for developers to write code that can run on different devices and operating systems without having to make significant changes.
+It can help optimize the performance of WebAssembly programs by defining the exact semantics of the language. 
+This can help compiler developers create more efficient code and make better use of hardware resources.
+
