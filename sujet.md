@@ -59,3 +59,18 @@ This makes it easier for developers to write code that can run on different devi
 It can help optimize the performance of WebAssembly programs by defining the exact semantics of the language. 
 This can help compiler developers create more efficient code and make better use of hardware resources.
 
+
+5.
+Eyeball closeness is a design principle of the formal model such that there is a line to line textual correspondence between the official specification and the mechanisation. A specification language is a formal language used to describe a system at a high level.
+
+A mechanised specification is a description of the syntax and semantics of a programming language using a precise and unambiguous notation, that is written in a formal language that can be checked by a computer for consistency and correctness. It can be used to generate a parser, a type checker, or an interpreter/compiler for the language, to prove properties about the language, such as type safety, or to verify that a program written in the language satisfies certain correctness criteria.
+
+Thus, the advantages of a mechanised specification is the automation of the checks for correctness by a computer. This allows for more rigorous testing and verification of the specification, which in turn can lead to greater confidence in the correctness and reliability of the language.
+
+Other artifacts derived from it are: 
+- Language reference manuals
+- Language parsers
+- Language compilers/interpreters
+- Development tools
+- Code generators
+- Formal verification tools
