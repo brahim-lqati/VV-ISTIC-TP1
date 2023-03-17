@@ -11,7 +11,21 @@
 5.  Shortly after the appearance of WebAssembly another paper proposed a mechanized specification of the language using Isabelle. The paper can be consulted here: https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf. This mechanized specification complements the first formalization attempt from the paper. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification? Does this new specification removes the need for testing?
 
 ## Answers
-1.AA
+1.
+Title: 362,000 Tesla cars ‘recalled’ due to serious software bug and multiple crashes: What you need to know
+https://gettotext.com/362000-tesla-cars-recalled-due-to-serious-software-bug-and-multiple-crashes-what-you-need-to-know/
+
+Tesla cars are equipped with an autonomous driving AI called FSD for Full Self-Driving. A bug was recently detected in this software system, causing Tesla cars to “disrespect traffic laws in the US. Some instances of the effects of this bug are, Tesla cars don’t avoid obstacles, drive through intersections and ignore the STOP signs, or through cross-road at full speed when the light is fixed orange. The cruise control also misread speed limit signs.
+
+The bug seems to be local since the vehicle is not communicating with any other external devices when these incidents occur. The bugs are possibly due to either the sensors of the car not detecting correctly the obstacles that should be avoided, the traffic signs, and speed limits, or the AI based system that is not taking the appropriate measures for the information that it receives, in very specific contexts.
+
+The repercussions for the customers are the dangers of running into an accident where they can either hurt themselves, or a passerby. For the company Tesla, this bug damaged its brand image, the trust customers have in its cars, and the massive recall and damaged cars that will need to be replaced/returned will be a major financial loss.
+
+In my opinion, being aware of obstacles, road signs, and speed limits, and slowing down or turning in another direction as a way to deal with the formers are already part of the default test cases of the Tesla FSD development team.
+Testing the right scenario would have definitely helped discover the fault, but, this bug being due to very specific conditions and contexts make identifying that testing scenario the greatest challenge.
+
+
+
 
 2. [COLLECTIONS-709](https://issues.apache.org/jira/browse/COLLECTIONS-709)
 
