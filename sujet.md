@@ -36,7 +36,8 @@ MultiSet.Entry is an interface in the Apache Commons Collections library for Jav
 
 When the last element in a MultiSet is removed using the remove() method, the count of the corresponding MultiSet.Entry should be set to zero. However, due to the bug, the getCount() method is not setting the count to zero even when the last element has been removed.
 
-3. The type of experiments done by Netflix is the usage of an internal service called Chaos Monkey. The purpose of this service is to simulate faults and server failures by selecting virtual machine instances where the production services are hosted, and terminate them.
+3. 
+The type of experiments done by Netflix is the usage of an internal service called Chaos Monkey. The purpose of this service is to simulate faults and server failures by selecting virtual machine instances where the production services are hosted, and terminate them.
 This experiment was mainly done during working hours.
 The requirements to implement chaos engineering is having a way to observe the effect of introducing failures in the system, and of handling failures in a fault tolerant system on the production servers. What is used by Netflix for this are two metrics, SPS (stream Starts Per Seconds) and Account signup per seconds.
 
@@ -48,7 +49,8 @@ How these experiments could be carried out in an organisation like an e-commerce
 
 
 
-4. The main advantages of having a formal specification for WebAssembly.
+4.
+The main advantages of having a formal specification for WebAssembly.
 The binary format of the WebAssembly language is highly efficient and can be loaded and executed much faster than equivalent JavaScript code. It's structured control flow ensures that code is well-formed and cannot contain certain types of errors or bugs that are common in other low-level languages. And also the WebAssembly's stack-based architecture and use of an SSA-form intermediate representation enable efficient compilation and execution on a wide range of hardware and operating systems.
 A formal specification helps ensure that all implementations of WebAssembly are compatible and can interoperate with each other. This is especially important for a language like WebAssembly, which is designed 
 to run in a wide range of environments.
