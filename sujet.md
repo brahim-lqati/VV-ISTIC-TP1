@@ -59,6 +59,12 @@ This makes it easier for developers to write code that can run on different devi
 It can help optimize the performance of WebAssembly programs by defining the exact semantics of the language. 
 This can help compiler developers create more efficient code and make better use of hardware resources.
 
+Does this mean that WebAssembly implementations should not be tested?
+
+In my opinion, I think like any software system, WebAssembly implementations can have bugs, and testing can help identify and fix these bugs.
+In webAssembly, it's still important to test implementations, as they may interact with other software components, 
+such as web browsers or operating systems, and testing can help ensure that these interactions are working correctly.
+
 
 5.
 Eyeball closeness is a design principle of the formal model such that there is a line to line textual correspondence between the official specification and the mechanisation. A specification language is a formal language used to describe a system at a high level.
